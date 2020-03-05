@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: auto;
+    width: 80%;
+    margin: 100px auto;
+    display: grid;
+    align-items: center;
+    flex-direction: row;
+}
+
+.top_row, .bot_row{
+    width: 100%;
+    height: 1fr;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+
+
+.obrazok{
+    box-shadow: slategray 10px 10px 8px;
+}
+
+button{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    font-size: 20px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(60, 88, 116);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(60, 88, 116, 0.952);
+}
