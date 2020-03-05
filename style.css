@@ -7,9 +7,9 @@ main{
     height: auto;
     width: 80%;
     margin: 100px auto;
-    display: grid;
+    display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .top_row, .bot_row{
@@ -17,18 +17,46 @@ main{
     height: 1fr;
     display: flex;
     padding: 50px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
+.karta{
+    height: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
-
-.obrazok{
+img{
+    border-radius: 5px;
     box-shadow: slategray 10px 10px 8px;
+}
+
+.predna_strana{
+    position: relative;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+
+}
+
+.zadna_strana{
+    opacity: 0;
+    transform: translateY(-100%) rotateY(180deg);
+    transition: all .5s ease-in-out;
+}
+
+.karta:hover .zadna_strana{
+    opacity: 1;
+    transform:translateY(-100%) rotateY(0);
+}
+.karta:hover .predna_strana{
+    opacity: 0;
+    transform: rotateY(180deg);
 }
 
 button{
     position: absolute;
     left: 50%;
+    transform: translateX(-50%);
     bottom: 15%;
     font-size: 20px;
     padding: 20px 40px;
