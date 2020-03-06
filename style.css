@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 main{
@@ -65,6 +66,7 @@ button{
     background-color: rgb(60, 88, 116);
     color: white;
     cursor: pointer;
+    font-weight: bolder;
 }
 
 button:hover{
